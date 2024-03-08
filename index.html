@@ -27,6 +27,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
       <!-- Theme style  -->
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
       <!-- Modernizr JS -->
       <script src="js/modernizr-2.6.2.min.js"></script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -38,6 +39,7 @@
 
         gtag('config', 'UA-165333769-1');
       </script>
+      <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
    </head>
    <body>
       <div id="colorlib-page">
@@ -422,13 +424,15 @@
                         </div>
                      </div>
                      <br>
-                     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-                     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
                      <div class="calendar">
+                        <!-- Loading stuff -->
+                        Loading the data just for you.
+                     </div>
                      <script>
-                        GitHubCalendar(".calendar", "", { responsive: true });
-                    </script>
-                    </div>
+                         GitHubCalendar(".calendar", "bpincelamattos");
+                         // or enable responsive functionality
+                         GitHubCalendar(".calendar", "bpincelamattos", { responsive: true });
+                     </script>
                   </div>
                </section>
                <!--------------Education----------->
